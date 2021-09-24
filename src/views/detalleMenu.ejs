@@ -17,7 +17,12 @@
         
           <h1 class="ps-center"><%= plato.name %> </h1>
           <br />
+          <img src="/images/<%= plato.image %> " alt="<%= plato.name %> ">
+          <% if(plato.description){ %> 
           <h4><%= plato.description %> </h4>
+          <% } else { %>
+          <h4>Plato típico</h4>
+          <% } %>  
           <p class="ps-text-grey">
             <%= plato.price %> 
           </p>
